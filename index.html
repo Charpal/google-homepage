@@ -2,14 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Google</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Charles Dang">
     <meta name="description" content="A replica of the Google homepage">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Google</title>
 </head>
 <body>
+    <nav role="navigation">
+        <div class="navbar">
+            <a href="#">About</a>
+            <a href="#">Store</a>
+            <span>
+            <a class="sign-in-button" href="#">Sign In</a>
+            <a href="#"><img src="/images/outline_apps_black_24dp.png" alt=""></a>
+            <a href="#">Images</a>
+            <a href="#">Gmail</a>
+        </span>
+        </div>
+    </nav>
     <img id="google-logo" src="images/googlelogo_color_272x92dp.png" alt="Google logo">
     
     <form id="search-bar" action="search_result.txt">
@@ -18,11 +30,14 @@
         <input id="search-input" type="text" name="search" id="search">
     
         <div id="search-button">
-        <input type="submit" value="Google Search">
-        <input type="submit" value="I'm Feeling Lucky">
+        <input type="submit" class="search-after" value="Google Search">
+        <input type="submit" class="search-after" value="I'm Feeling Lucky">
         </div>
     </div>
     </form>
 
 </body>
+<footer>
+
+</footer>
 </html>
